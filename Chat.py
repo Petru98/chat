@@ -1238,7 +1238,7 @@ class LaunchWindowClient(tk.Toplevel):
         self.parent = parent
         self.title("Login")
         self.geometry("700x400")
-        self.wm_iconbitmap("assets/icon.ico")
+        # self.wm_iconbitmap("assets/icon.ico")
 
         self.btn_connect = tk.Button(self, text = "Connect", command = self.checkvalues, width = 20, fg = "#FFCC33", bg = "#383a39")
 
@@ -1253,7 +1253,7 @@ class LaunchWindowClient(tk.Toplevel):
 
         self.configure(background = "#FFCC33")    #  yellow
 
-        self.logo_image = tk.PhotoImage(file = "assets/Logo.gif")
+        self.logo_image = None #tk.PhotoImage(file = "assets/Logo.gif")
         self.logo = tk.Label(self, image = self.logo_image, bg = "#FFCC33")
         self.logo.pack()
 
